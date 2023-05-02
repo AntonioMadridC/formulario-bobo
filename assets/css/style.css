@@ -1,0 +1,82 @@
+@keyframes neener {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 170%;
+    }
+}
+@keyframes neenero {
+    0% {
+        left: 170%;
+
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes switcheroo1 {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    80% {
+        left: 102.5%;
+    }
+    100% {
+        left: 102.5%;
+    }
+}
+@keyframes switcheroo2 {
+    0% {
+        right: 0%;
+    }
+    20% {
+        right: 0%;
+    }
+    80% {
+        right: 102.5%;
+    }
+    100% {
+        right: 102.5%;
+    }
+}
+
+.form-control:focus {
+    background-color: black;
+}
+
+.form-select:focus {
+    background-color: black;
+}
+
+#enviar{
+    padding: 5%;
+    position: relative;
+}
+#enviarbtn{
+    position: relative;
+}
+#enviar:hover #enviarbtn {animation: neener 0.5s both;}
+#back:hover #enviarbtn {animation: neenero 0.5s both;}
+
+/* #enviarbtn:hover {animation: neener 2s reverse both;} */
+/* .buttongo{
+    animation: neener 2s keyframe (forwards)
+}
+.buttonback{
+    animation: neener 2s reverse keyframe (forwards)
+} */
+
+.switch1 {
+    position: relative;
+    animation: switcheroo1 1s infinite alternate;
+}
+
+.switch2 {
+    position: relative;
+    animation: switcheroo2 1s infinite alternate;
+}
